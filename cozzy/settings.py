@@ -124,3 +124,12 @@ AUTHENTICATION_BACKENDS = [
     # all auth authentication
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
+
+
+# Allauth configuration
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_USERNAME_REQUIRED = False
+LOGIN_REDIRECT_URL = '/'
+ACCOUNT_LOGOUT_REDIRECT_URL = '/account/login/'
